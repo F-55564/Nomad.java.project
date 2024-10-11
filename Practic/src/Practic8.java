@@ -8,6 +8,6 @@ public class Practic8 {
     }
 
     public static void main(String[] args) {
-        System.out.println(repeatString("慧娘", 3));
+        System.out.println(repeatString("вв", 3));
     }
 }

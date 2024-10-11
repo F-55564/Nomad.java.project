@@ -12,7 +12,7 @@ public class Practic4 {
     }
 
     public static void main(String[] args) {
-        String testString = "флы";
+        String testString = "генагенагенагенрпршроары";
         System.out.println(countVowels(testString));
     }
 

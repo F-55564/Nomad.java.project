@@ -14,6 +14,6 @@ public class Practic9 {
         int[] exampleArray = {10,20,30,9 };
         int totalSum = sumArray(exampleArray);
 
-        System.out.println("массccccccив: " + totalSum);
+        System.out.println("массив: " + totalSum);
     }
 }

@@ -1,9 +1,9 @@
 public class Practic1 {
     public static void printGreeting(String name) {
-        System.out.println("Здарово отец, " + name + "!");
+        System.out.println("привет " + name + "!");
     }
 
     public static void main(String[] args) {
-        printGreeting("Сэмуль л дексон");
+        printGreeting("Дорогой");
     }
 }
