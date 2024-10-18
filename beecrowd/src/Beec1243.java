@@ -26,10 +26,8 @@ public class Beec1243 {
             }
         }
 
-        // Средняя длина слов
         int avgLength = wordCount > 0 ? totalLength / wordCount : 0;
 
-        // Определение сложности
         if (avgLength <= 3) {
             return 250;
         } else if (avgLength <= 5) {
@@ -40,7 +38,6 @@ public class Beec1243 {
     }
 
     public static boolean isWord(String symbol) {
-        // Слово содержит только буквы и может оканчиваться одной точкой
         if (symbol.matches("[a-zA-Z]+\\.?")) {
             return true;
         }

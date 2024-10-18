@@ -11,18 +11,22 @@ public class Beec1193 {
             String number = input[0];
             String base = input[1];
 
-            if (base.equals("bin")) {
-                int decValue = Integer.parseInt(number, 2);
-                System.out.println(decValue + " dec");
-                System.out.println(Integer.toHexString(decValue).toUpperCase() + " hex");
-            } else if (base.equals("dec")) {
-                int decValue = Integer.parseInt(number);
-                System.out.println(Integer.toHexString(decValue).toUpperCase() + " hex");
-                System.out.println(Integer.toBinaryString(decValue) + " bin");
-            } else if (base.equals("hex")) {
-                int decValue = Integer.parseInt(number, 16);
-                System.out.println(decValue + " dec");
-                System.out.println(Integer.toBinaryString(decValue) + " bin");
+            switch (base) {
+                case "bin" -> {
+                    int decValue = Integer.parseInt(number, 2);
+                    System.out.println(decValue + " dec");
+                    System.out.println(Integer.toHexString(decValue).toUpperCase() + " hex");
+                }
+                case "dec" -> {
+                    int decValue = Integer.parseInt(number);
+                    System.out.println(Integer.toHexString(decValue).toUpperCase() + " hex");
+                    System.out.println(Integer.toBinaryString(decValue) + " bin");
+                }
+                case "hex" -> {
+                    int decValue = Integer.parseInt(number, 16);
+                    System.out.println(decValue + " dec");
+                    System.out.println(Integer.toBinaryString(decValue) + " bin");
+                }
             }
 
             if (i < n - 1) {
